@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Div Pro</string>
+    <string name="response_empty">Данные с сервера не получены</string>
+    <string name="response_error">При подключении произошла ошибка</string>
+    <string name="watch_episodes">Watch episodes</string>
+    <string name="characters">Characters</string>
+</resources>

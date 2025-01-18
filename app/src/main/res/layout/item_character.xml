@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/margin_xl"
+    android:paddingVertical="@dimen/margin_l">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:cardCornerRadius="@dimen/margin_xxl"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_character_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:foreground="@mipmap/ic_launcher"
+            tools:src="@drawable/ic_launcher_background" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_character_name"
+        android:layout_width="0dp"
+        android:layout_marginEnd="@dimen/margin_s"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_xls"
+        android:fontFamily="@font/sf_ui_text_medium"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_xl"
+        app:layout_constraintEnd_toStartOf="@+id/cv_status"
+        app:layout_constraintStart_toEndOf="@id/cv_image"
+        app:layout_constraintTop_toTopOf="@id/cv_image"
+        tools:text="Rick Sanchez" />
+
+    <TextView
+        android:id="@+id/tv_character_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_xxs"
+        android:fontFamily="@font/sf_ui_text_regular"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_s"
+        app:layout_constraintStart_toStartOf="@id/tv_character_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_character_name"
+        tools:text="Human, male" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_watch_episode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_m"
+        android:backgroundTint="@color/light_orange"
+        android:backgroundTintMode="src_atop"
+        app:layout_constraintBottom_toTopOf="@id/tv_character_location"
+        android:layout_marginBottom="@dimen/margin_s"
+        app:cardCornerRadius="@dimen/margin_xls"
+        app:cardElevation="0dp"
+        app:layout_constraintStart_toStartOf="@id/tv_character_info"
+        app:layout_constraintTop_toBottomOf="@id/tv_character_info">
+
+        <TextView
+            android:id="@+id/tv_watch_episode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_m"
+            android:layout_marginVertical="@dimen/margin_s"
+            android:drawablePadding="@dimen/margin_xs"
+            android:fontFamily="@font/sf_ui_text_regular"
+            android:text="@string/watch_episodes"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/text_size_s"
+            app:drawableStartCompat="@drawable/ic_play" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_character_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:drawableStartCompat="@drawable/ic_location"
+        app:layout_constraintStart_toStartOf="@id/cv_watch_episode"
+        app:layout_constraintBottom_toBottomOf="@id/cv_image"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/text_size_s"
+        tools:text="Earth (C-500A)"
+        android:fontFamily="@font/sf_ui_text_regular"
+        android:drawablePadding="@dimen/margin_xs"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_status"
+        app:cardCornerRadius="@dimen/margin_lsxx"
+        android:layout_width="wrap_content"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/light_green"
+        android:backgroundTintMode="src_atop"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="alive"
+            android:fontFamily="@font/sf_ui_text_medium"
+            android:textSize="@dimen/text_size_s"
+            android:textAllCaps="true"
+            android:textColor="@color/green"
+            android:layout_marginVertical="@dimen/margin_xxs"
+            android:layout_marginHorizontal="@dimen/margin_s"/>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
