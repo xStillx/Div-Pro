@@ -1,6 +1,7 @@
 # Div Pro
 ## Приложение для просмотра информации о персонажал из сериала "Рик и Морти"
 ## Скрины приложения
+https://drive.google.com/file/d/1IbN98igxHMMhLNroPcLPCJUTHPzb35av/view?usp=sharing
 ![Main](https://drive.google.com/file/d/1IbN98igxHMMhLNroPcLPCJUTHPzb35av/view?usp=sharing)
 ## Стек
 + OkHttp/Retrofit
