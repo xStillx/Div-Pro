@@ -27,6 +27,7 @@
         android:id="@+id/tv_character_name"
         android:layout_width="0dp"
         android:layout_marginEnd="@dimen/margin_s"
+        android:singleLine="true"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_xls"
         android:fontFamily="@font/sf_ui_text_medium"
